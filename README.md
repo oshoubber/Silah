@@ -49,7 +49,7 @@ Hardware discovery is runtime-based; fan header numbers, names, and controller l
 ## Download and run
 
 1. Open the [latest release](../../releases/latest).
-2. Download and extract `Silah-0.2.2-win-x64.zip`.
+2. Download and extract `Silah-0.2.3-win-x64.zip`.
 3. Run `Silah.exe`.
 4. Open **Settings** and confirm the required devices show as connected.
 5. If L-Connect is installed, use Silah's **Disable L-Connect on startup** option or stop L-Connect before claiming the same USB devices.
