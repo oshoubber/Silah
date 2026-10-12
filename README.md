@@ -2,6 +2,8 @@
 
 A lightweight, native Windows controller for the **Lian Li HydroShift II OLED Curved 360P28**. Silah replaces the parts of L-Connect needed for cooling, lighting, profiles, and the OLED display without embedding a browser or requiring a cloud account.
 
+**[Download Silah.exe](https://github.com/oshoubber/Silah/releases/latest/download/Silah.exe)** — Windows x64, self-contained. Only this file is needed; the optional source archives on the release page are third-party licensing downloads.
+
 > [!WARNING]
 > Silah is experimental hardware-control software. Test fan assignments carefully and keep safe firmware or BIOS limits configured. Firmware updates are intentionally unsupported.
 

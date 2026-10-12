@@ -22,6 +22,8 @@ The executable automatically extracts its bundled runtime/native files into Wind
 
 Silah itself requests administrator access at launch for hardware access. Windows/UAC approval is still required. Already-installed PawnIO is reused; minimized startup does not display an unsolicited driver-install prompt. PawnIO is shared with other monitoring tools, so deleting Silah does not uninstall that driver.
 
+Silah's application executable is currently **unsigned**, unlike the signed PawnIO driver installer. Windows SmartScreen may display an unknown-publisher warning. Download only from the official repository and compare the executable's SHA-256 with the release's `Silah-SHA256.txt`; do not disable Windows security features to run it.
+
 ## Supplied by Windows or the hardware vendor
 
 - **Windows 10/11 x64** and normal graphics drivers. GPU-specific encoder availability depends on those drivers; CPU encoding remains available.
