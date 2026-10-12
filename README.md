@@ -72,7 +72,8 @@ Silah stores settings locally in `%LOCALAPPDATA%\Silah`. Administrator access ma
 - Stable live telemetry text updates and improved text/clock resizing.
 - Bundled offline media encoding and optional, consent-based PawnIO setup inside a single executable.
 - Bundled media tools take priority over pre-existing external FFmpeg/L-Connect copies.
-- Validated with 67 automated tests and an isolated single-executable packaging check (empty PATH). Previous monitor-off/on playback check passed; long-duration stability remains under investigation.
+- Normalized GIF pixel-aspect metadata before compositing with PNG/text overlays for the bundled encoder.
+- Validated with 68 automated tests and an isolated single-executable GIF/PNG/text composition check (empty PATH). Previous monitor-off/on playback check passed; long-duration stability remains under investigation.
 
 Extended overnight stability and the reported coolant-sensor issue remain under investigation.
 
