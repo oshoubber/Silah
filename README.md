@@ -15,7 +15,7 @@ A lightweight, native Windows controller for the **Lian Li HydroShift II OLED Cu
 - Runtime fan/controller discovery with identification, aliases, and controller-wide assignment
 - UNI FAN SL-Infinity controller and HydroShift P28 pump/fan control
 - Lighting effects, direction, speed, and brightness controls
-- Display Studio with images, GIFs, video, SVG, fonts, shapes, live temperature layers, groups, cropping, snapping, drag-and-drop ordering, and undo
+- Display Studio with images, GIFs, video, SVG, fonts, shapes, live temperature and clock layers, groups, cropping, snapping, drag-and-drop ordering, and undo
 - Display power, brightness, angle, and height controls
 - Complete profiles covering cooling, lighting, and OLED layouts
 - Start with Windows and optional L-Connect startup disablement
@@ -58,6 +58,15 @@ Hardware discovery is runtime-based; fan header numbers, names, and controller l
 Silah stores settings locally in `%LOCALAPPDATA%\Silah`. Administrator access may be required for motherboard fan-control interfaces. L-Connect and Silah cannot simultaneously own the same exclusive USB interface.
 
 ## Project status
+
+### Latest update: v0.2.4
+
+- Lower GIF/video composition memory usage by cropping before scaling.
+- Improved OLED stream recovery and command acknowledgement handling.
+- Stable live telemetry text updates and improved text/clock resizing.
+- Validated with 53 automated tests and a monitor-off/on playback check.
+
+Extended overnight stability and the reported coolant-sensor issue remain under investigation.
 
 Silah is currently closed-source while hardware support and safety behavior mature. Please use this repository for releases, documentation, bug reports, and feature requests.
 
