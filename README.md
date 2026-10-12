@@ -50,21 +50,27 @@ Hardware discovery is runtime-based; fan header numbers, names, and controller l
 
 1. Open the [latest release](../../releases/latest).
 2. Download `Silah.exe`.
-3. Run `Silah.exe`.
+3. Run `Silah.exe` and approve Windows' administrator prompt. If the PawnIO sensor driver is missing, Silah offers its bundled official installer; installation is optional and requires consent.
 4. Open **Settings** and confirm the required devices show as connected.
 5. If L-Connect is installed, use Silah's **Disable L-Connect on startup** option or stop L-Connect before claiming the same USB devices.
 6. In **Cooling**, identify each output before enabling control.
 
 Silah stores settings locally in `%LOCALAPPDATA%\Silah`. Administrator access may be required for motherboard fan-control interfaces. L-Connect and Silah cannot simultaneously own the same exclusive USB interface.
 
+### Dependencies — included, not separate downloads
+
+`Silah.exe` includes the **.NET 8 runtime, FFmpeg media encoder, USB libraries, and official PawnIO installer**. You do not need to install .NET, FFmpeg, or L-Connect separately. PawnIO is a **signed kernel driver** required for CPU/motherboard sensors and is installed only after you agree. See [Dependencies and first launch](DEPENDENCIES.md) for the complete dependency list and requirements, and [third-party notices](THIRD_PARTY_NOTICES.md) for licenses/source archives.
+
 ## Project status
 
-### Latest update: v0.2.4
+### Latest update: v0.2.5
 
 - Lower GIF/video composition memory usage by cropping before scaling.
 - Improved OLED stream recovery and command acknowledgement handling.
 - Stable live telemetry text updates and improved text/clock resizing.
-- Validated with 53 automated tests and a monitor-off/on playback check.
+- Bundled offline media encoding and optional, consent-based PawnIO setup inside a single executable.
+- Bundled media tools take priority over pre-existing external FFmpeg/L-Connect copies.
+- Validated with 67 automated tests and an isolated single-executable packaging check (empty PATH). Previous monitor-off/on playback check passed; long-duration stability remains under investigation.
 
 Extended overnight stability and the reported coolant-sensor issue remain under investigation.
 
